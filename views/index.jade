@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  select#J_chartUpdate
+    option(value='server1', selected='selected') Server1
+    option(value='server2') Server2
+    option(value='server3') Server3
+  div#J_chartPanel(style='height:500px;')
+  script(type='text/javascript', src='/javascripts/mycharts.js')
